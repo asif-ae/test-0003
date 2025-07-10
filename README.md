@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dashboard Project
 
-## Getting Started
+## Features
+- **Responsive Dashboard Layout**: A hidable sidebar that adapts to mobile devices.
+- **Transaction Table**: Displays transaction data with pagination and dark mode support.
+- **Theme Support**: Light and dark mode with Tailwind CSS `dark:` classes.
 
-First, run the development server:
+## Prerequisites
+- Node.js (v14.x or later)
+- npm or yarn
+- Git (optional for cloning)
 
+## Installation
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd <repository-folder>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+Run the following command to install all required packages:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Start the Development Server
+Run the following command to start the Next.js development server:
+```bash
+npm run dev
+```
 
-## Learn More
+### 2. Open the Application
+Open your browser and navigate to `http://localhost:3000`. The dashboard should be accessible, with the sidebar, transaction table, card, and accordion components rendered.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Build for Production
+To build the project for production:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Then start the production server:
+```bash
+npm start
+```
