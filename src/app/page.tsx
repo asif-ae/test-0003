@@ -1,16 +1,20 @@
 "use client";
 
-import ThemeToggle from "@/components/ThemeToggle";
-import { useTheme } from "@/contexts/Theme";
+import { Card } from "@/components/Card";
+import DashboardLayout from "@/components/DashboardLayout";
+import { TransactionTable } from "@/components/TransactionTable";
 
 export default function Home() {
-  const { theme } = useTheme();
-
   return (
-    <div className={theme === "dark" ? "dark" : ""}>
+    <DashboardLayout>
       <div className="dark:bg-gray-900 bg-white min-h-screen p-[12px_24px]">
-        <ThemeToggle />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <TransactionTable />
       </div>
-    </div>
+    </DashboardLayout>
   );
 }
