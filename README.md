@@ -14,8 +14,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/asif-ae/test-0003.git
+cd test-0003
 ```
 
 ### 2. Install Dependencies
